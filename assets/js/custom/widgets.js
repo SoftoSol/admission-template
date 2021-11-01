@@ -301,7 +301,8 @@ var KTWidgets = function () {
         var labelColor = KTUtil.getCssVariableValue('--bs-gray-500');
         var borderColor = KTUtil.getCssVariableValue('--bs-gray-200');
         var baseColor = KTUtil.getCssVariableValue('--bs-primary');
-        var secondaryColor = KTUtil.getCssVariableValue('--bs-gray-300');
+        var secondaryColor = '#d9a809';
+        var tertiaryColor='#11bd3f';
 
         if (!element) {
             return;
@@ -309,11 +310,14 @@ var KTWidgets = function () {
 
         var options = {
             series: [{
-                name: 'Net Profit',
+                name: 'Pre-Medical',
                 data: [44, 55, 57, 56, 61, 58]
             }, {
-                name: 'Revenue',
+                name: 'Pre-Engineering',
                 data: [76, 85, 101, 98, 87, 105]
+            }, {
+                name: 'Computer Science',
+                data: [54, 60, 34, 81, 57, 55]
             }],
             chart: {
                 fontFamily: 'inherit',
@@ -342,7 +346,7 @@ var KTWidgets = function () {
                 colors: ['transparent']
             },
             xaxis: {
-                categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+                categories: ['Quetta', 'Peshawar', 'Lahore', 'Karachi', 'Khuzdar', 'Pashin'],
                 axisBorder: {
                     show: false,
                 },
@@ -394,11 +398,11 @@ var KTWidgets = function () {
                 },
                 y: {
                     formatter: function (val) {
-                        return "$" + val + " thousands"
+                        return val + " Applications"
                     }
                 }
             },
-            colors: [baseColor, secondaryColor],
+            colors: [baseColor, secondaryColor,tertiaryColor],
             grid: {
                 borderColor: borderColor,
                 strokeDashArray: 4,
