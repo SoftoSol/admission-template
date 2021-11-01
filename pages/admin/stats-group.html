@@ -2,7 +2,7 @@
 <html lang="en">
 	<!--begin::Head-->
 	<head><base href="../">
-		<title>City Statistics | Admin Panel</title>
+		<title>Group Statistics | Admin Panel</title>
 		<meta charset="utf-8" />
 		<link rel="shortcut icon" href="../../assets/media/logos/favicon.png" />
 		<!--begin::Fonts-->
@@ -133,7 +133,7 @@
 										<span class="menu-title">Exam Centers</span>
 									</a>
 								</div>
-								<div data-kt-menu-trigger="click" class="menu-item here show menu-accordion">
+								<div data-kt-menu-trigger="click" class="menu-item here menu-accordion show">
 									<span class="menu-link">
 										<span class="menu-icon">
 											<!--begin::Svg Icon | path: icons/duotune/general/gen022.svg-->
@@ -160,7 +160,7 @@
 											</a>
 										</div>
 										<div class="menu-item">
-											<a class="menu-link active" href="../../pages/admin/stats-city.html">
+											<a class="menu-link" href="../../pages/admin/stats-city.html">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
@@ -176,7 +176,7 @@
                                             </a>
                                         </div>
 										<div class="menu-item">
-											<a class="menu-link" href="../../pages/admin/stats-group.html">
+											<a class="menu-link active" href="../../pages/admin/stats-group.html">
 												<span class="menu-bullet">
 													<span class="bullet bullet-dot"></span>
 												</span>
@@ -390,7 +390,7 @@
                                 <div class="card-header border-0 pt-5">
                                     <!--begin::Title-->
                                     <h3 class="card-title align-items-start flex-column">
-                                        <span class="card-label fw-bolder fs-3 mb-1">City wise Statistics</span>
+                                        <span class="card-label fw-bolder fs-3 mb-1">Groupwise Statistics</span>
                                     </h3>
                                     <!--end::Title-->
                            
@@ -399,7 +399,7 @@
                                 <!--begin::Body-->
                                 <div class="card-body">
                                     <!--begin::Chart-->
-                                    <div id="kt_charts_widget_1_chart" style="height: 350px"></div>
+                                    <div id="kt_charts_widget_1_chart_group" style="height: 350px"></div>
                                     <!--end::Chart-->
                                 </div>
                                 <!--end::Body-->
@@ -411,7 +411,7 @@
 									<!--begin::Header-->
 									<div class="card-header border-0 pt-5">
 										<h3 class="card-title align-items-start flex-column">
-											<span class="card-label fw-bolder fs-3 mb-1">Cities</span>
+											<span class="card-label fw-bolder fs-3 mb-1">Groups</span>
 										</h3>
 									</div>
 									<!--end::Header-->
@@ -424,7 +424,7 @@
 												<!--begin::Table head-->
 												<thead>
 													<tr class="fw-bolder text-muted">
-														<th class="min-w-150px">City</th>
+														<th class="min-w-150px">Level</th>
 														<th class="min-w-120px text-end">Pre-Medical</th>
 														<th class="min-w-120px text-end">Pre-Engineering</th>
 														<th class="min-w-120px text-end">Computer Science</th>
@@ -436,127 +436,40 @@
 												<tbody>
 													<tr>
 														<td class="min-w-150px">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary fs-6">Quetta</a>
+															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary fs-6">Intermediate</a>
 														</td>
 														<td  class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">44</a>
+															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">244</a>
 														</td>
 														<td class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">76</a>
+															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">314</a>
 														</td>
 														<td class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">54</a>
+															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">214</a>
 														</td>
 														<td class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">174</a>
+															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">672</a>
 														</td>
 													</tr>
 
 													<tr>
 														<td class="min-w-150px">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary fs-6">Peshawar</a>
+															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary fs-6">Matric</a>
 														</td>
 														<td  class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">55</a>
+															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">0</a>
 														</td>
 														<td class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">85</a>
+															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">0</a>
 														</td>
 														<td class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">60</a>
+															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">0</a>
 														</td>
 														<td class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">200</a>
+															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">0</a>
 														</td>
 													</tr>
                                                     
-													<tr>
-														<td class="min-w-150px">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary fs-6">Lahore</a>
-														</td>
-														<td  class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">57</a>
-														</td>
-														<td class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">101</a>
-														</td>
-														<td class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">34</a>
-														</td>
-														<td class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">192</a>
-														</td>
-													</tr>
-                                                    
-													<tr>
-														<td class="min-w-150px">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary fs-6">Karachi</a>
-														</td>
-														<td  class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">56</a>
-														</td>
-														<td class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">98</a>
-														</td>
-														<td class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">81</a>
-														</td>
-														<td class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">235</a>
-														</td>
-													</tr>
-                                                    
-													<tr>
-														<td class="min-w-150px">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary fs-6">Khuzdar</a>
-														</td>
-														<td  class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">61</a>
-														</td>
-														<td class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">87</a>
-														</td>
-														<td class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">57</a>
-														</td>
-														<td class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">205</a>
-														</td>
-													</tr>
-													<tr>
-														<td class="min-w-150px">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary fs-6">Pashin</a>
-														</td>
-														<td  class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">58</a>
-														</td>
-														<td class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">105</a>
-														</td>
-														<td class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">75</a>
-														</td>
-														<td class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">238</a>
-														</td>
-													</tr>
-													<tr>
-														<td class="min-w-150px">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary fs-6"></a>
-														</td>
-														<td  class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6"></a>
-														</td>
-														<td class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6"></a>
-														</td>
-														<td class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6"></a>
-														</td>
-														<td class="min-w-120px text-end">
-															<a href="javascript:void(0);" class="text-dark fw-bolder text-hover-primary d-block mb-1 fs-6">1,244</a>
-														</td>
-													</tr>
 												</tbody>
 												<!--end::Table body-->
 											</table>

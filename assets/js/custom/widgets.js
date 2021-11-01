@@ -317,7 +317,7 @@ var KTWidgets = function () {
                 data: [76, 85, 101, 98, 87, 105]
             }, {
                 name: 'Computer Science',
-                data: [54, 60, 34, 81, 57, 55]
+                data: [54, 60, 34, 81, 57, 75]
             }],
             chart: {
                 fontFamily: 'inherit',
@@ -417,7 +417,130 @@ var KTWidgets = function () {
         var chart = new ApexCharts(element, options);
         chart.render();      
     }
+    // Charts widgets
+    var initChartsWidget1Group = function() {
+        var element = document.getElementById("kt_charts_widget_1_chart_group");
 
+        var height = parseInt(KTUtil.css(element, 'height'));
+        var labelColor = KTUtil.getCssVariableValue('--bs-gray-500');
+        var borderColor = KTUtil.getCssVariableValue('--bs-gray-200');
+        var baseColor = KTUtil.getCssVariableValue('--bs-primary');
+        var secondaryColor = '#d9a809';
+        var tertiaryColor='#11bd3f';
+
+        if (!element) {
+            return;
+        }
+
+        var options = {
+            series: [{
+                name: 'Pre-Medical',
+                data: [244, 5]
+            }, {
+                name: 'Pre-Engineering',
+                data: [314, 5]
+            }, {
+                name: 'Computer Science',
+                data: [214, 5]
+            }],
+            chart: {
+                fontFamily: 'inherit',
+                type: 'bar',
+                height: height,
+                toolbar: {
+                    show: false
+                }
+            },
+            plotOptions: {
+                bar: {
+                    horizontal: false,
+                    columnWidth: ['30%'],
+                    borderRadius: 4
+                },
+            },
+            legend: {
+                show: false
+            },
+            dataLabels: {
+                enabled: false
+            },
+            stroke: {
+                show: true,
+                width: 2,
+                colors: ['transparent']
+            },
+            xaxis: {
+                categories: ['Intermediate', 'Matric'],
+                axisBorder: {
+                    show: false,
+                },
+                axisTicks: {
+                    show: false
+                },
+                labels: {
+                    style: {
+                        colors: labelColor,
+                        fontSize: '12px'
+                    }
+                }
+            },
+            yaxis: {
+                labels: {
+                    style: {
+                        colors: labelColor,
+                        fontSize: '12px'
+                    }
+                }
+            },
+            fill: {
+                opacity: 1
+            },
+            states: {
+                normal: {
+                    filter: {
+                        type: 'none',
+                        value: 0
+                    }
+                },
+                hover: {
+                    filter: {
+                        type: 'none',
+                        value: 0
+                    }
+                },
+                active: {
+                    allowMultipleDataPointsSelection: false,
+                    filter: {
+                        type: 'none',
+                        value: 0
+                    }
+                }
+            },
+            tooltip: {
+                style: {
+                    fontSize: '12px'
+                },
+                y: {
+                    formatter: function (val) {
+                        return val + " Applications"
+                    }
+                }
+            },
+            colors: [baseColor, secondaryColor,tertiaryColor],
+            grid: {
+                borderColor: borderColor,
+                strokeDashArray: 4,
+                yaxis: {
+                    lines: {
+                        show: true
+                    }
+                }
+            }
+        };
+
+        var chart = new ApexCharts(element, options);
+        chart.render();      
+    }
     var initChartsWidget2 = function() {
         var element = document.getElementById("kt_charts_widget_2_chart");
 
@@ -553,7 +676,7 @@ var KTWidgets = function () {
 
         var options = {
             series: [{
-                name: 'Net Profit',
+                name: 'Applications',
                 data: [30, 40, 40, 90, 90, 70, 70]
             }],
             chart: {
@@ -584,7 +707,7 @@ var KTWidgets = function () {
                 colors: [baseColor]
             },
             xaxis: {
-                categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+                categories: ['28/10','29/10','30/10','31/10','1/11','2/11','3/11'],
                 axisBorder: {
                     show: false,
                 },
@@ -649,7 +772,7 @@ var KTWidgets = function () {
                 },
                 y: {
                     formatter: function (val) {
-                        return "$" + val + " thousands"
+                        return  val + " thousands"
                     }
                 }
             },
@@ -3067,6 +3190,7 @@ var KTWidgets = function () {
 
             // Charts widgets
             initChartsWidget1();
+            initChartsWidget1Group();
             initChartsWidget2();
             initChartsWidget3();
             initChartsWidget4();
